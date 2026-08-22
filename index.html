@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP N 3 Gandrungmangu - Cerdas, Berkarakter, Berprestasi</title>
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-blue-900/95 backdrop-blur-md text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-amber-500 text-blue-900 font-bold p-2.5 rounded-lg text-xl tracking-wider">
+                        SMPN3
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg leading-tight">SMP N 3 GANDRUNGMANGU</h1>
+                        <p class="text-xs text-blue-200">Kabupaten Cilacap</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 font-medium">
+                    <a href="#beranda" class="hover:text-amber-400 transition">Beranda</a>
+                    <a href="#profil" class="hover:text-amber-400 transition">Profil</a>
+                    <a href="#fasilitas" class="hover:text-amber-400 transition">Fasilitas</a>
+                    <a href="#ekstrakurikuler" class="hover:text-amber-400 transition">Ekstrakurikuler</a>
+                    <a href="#kontak" class="hover:text-amber-400 transition">Kontak</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 border-t border-blue-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#beranda" class="block py-2 hover:text-amber-400">Beranda</a>
+            <a href="#profil" class="block py-2 hover:text-amber-400">Profil</a>
+            <a href="#fasilitas" class="block py-2 hover:text-amber-400">Fasilitas</a>
+            <a href="#ekstrakurikuler" class="block py-2 hover:text-amber-400">Ekstrakurikuler</a>
+            <a href="#kontak" class="block py-2 hover:text-amber-400">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative bg-slate-900 text-white min-h-[550px] flex items-center">
+        <img src="img/hero-bg.jpg" alt="Suasana Sekolah" class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-2xl">
+                <span class="bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Selamat Datang
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-4 mb-6 leading-tight">
+                    Mewujudkan Generasi Cerdas, Berkarakter & Unggul
+                </h2>
+                <p class="text-lg text-slate-200 mb-8 leading-relaxed">
+                    SMP N 3 Gandrungmangu berkomitmen memberikan pendidikan berkualitas unggul, mengasah potensi akademik, serta membentuk akhlak mulia peserta didik.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#profil" class="bg-amber-500 hover:bg-amber-600 text-blue-950 font-bold px-6 py-3 rounded-lg transition shadow-lg">
+                        Jelajahi Profil
+                    </a>
+                    <a href="#kontak" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-6 py-3 rounded-lg backdrop-blur-sm transition">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sambutan & Profil Section -->
+    <section id="profil" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="img/kepala-sekolah.jpg" alt="Kepala Sekolah" class="rounded-2xl shadow-xl w-full object-cover max-h-[450px]">
+                    <div class="absolute -bottom-6 -right-6 bg-emerald-600 text-white p-6 rounded-2xl shadow-lg hidden sm:block">
+                        <p class="text-2xl font-bold">Akreditasi A</p>
+                        <p class="text-sm opacity-90">Berstandar Nasional</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-blue-900 font-bold text-sm tracking-widest uppercase mb-2">Sambutan Kepala Sekolah</h3>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Membangun Masa Depan Gemilang Bersama Kami</h2>
+                    <blockquote class="text-slate-600 italic mb-6 border-l-4 border-amber-500 pl-4">
+                        "Pendidikan bukan sekadar mengisi wadah yang kosong, melainkan menyalakan api keunggulan dan karakter pada diri setiap siswa."
+                    </blockquote>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-blue-900 mb-1">Visi Sekolah</h4>
+                            <p class="text-slate-600 text-sm">Terwujudnya peserta didik yang bertaqwa, berprestasi, berkarakter, dan berwawasan lingkungan.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-900 mb-1">Misi Utama</h4>
+                            <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                                <li>Menyelenggarakan pembelajaran efektif dan inovatif.</li>
+                                <li>Menanamkan nilai budi pekerti dan disiplin tinggi.</li>
+                                <li>Mendorong minat siswa dalam bidang akademik dan non-akademik.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fasilitas Section -->
+    <section id="fasilitas" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h3 class="text-blue-900 font-bold text-sm tracking-widest uppercase">Sarana & Prasarana</h3>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Fasilitas Penunjang Belajar</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="img/fasilitas-lab.jpg" alt="Laboratorium Komputer" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl text-blue-900 mb-2">Laboratorium Komputer & IPA</h4>
+                        <p class="text-slate-600 text-sm">Dilengkapi perangkat modern untuk mendukung kegiatan praktikum serta asesmen berbasis digital.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="img/fasilitas-perpus.jpg" alt="Perpustakaan Sekolah" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl text-blue-900 mb-2">Perpustakaan Digital & Literatur</h4>
+                        <p class="text-slate-600 text-sm">Koleksi buku lengkap, ruang baca yang nyaman, serta akses katalog digital untuk literasi siswa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ekstrakurikuler Section -->
+    <section id="ekstrakurikuler" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-blue-900 font-bold text-sm tracking-widest uppercase mb-2">Pengembangan Bakat</h3>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Kegiatan Ekstrakurikuler</h2>
+                    <p class="text-slate-600 mb-6">Kami menyediakan wadah bagi siswa untuk mengasah minat, bakat, kepemimpinan, dan kerja sama tim melalui berbagai kegiatan ekstrakurikuler:</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-emerald-600">
+                            <p class="font-bold text-blue-900">Pramuka</p>
+                            <p class="text-xs text-slate-500">Wajib & Pembentukan Karakter</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-amber-500">
+                            <p class="font-bold text-blue-900">PMR & Paskibra</p>
+                            <p class="text-xs text-slate-500">Kedisiplinan & Kemanusiaan</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-amber-500">
+                            <p class="font-bold text-blue-900">Olahraga</p>
+                            <p class="text-xs text-slate-500">Voli, Futsal, Atletik</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-emerald-600">
+                            <p class="font-bold text-blue-900">Seni & Keagamaan</p>
+                            <p class="text-xs text-slate-500">Rebana, Musik, Seni Tari</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/ekstra-pramuka.jpg" alt="Ekstrakurikuler Pramuka" class="rounded-2xl shadow-xl w-full object-cover max-h-[400px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-amber-400 font-bold text-sm tracking-widest uppercase mb-2">Informasi & Lokasi</h3>
+                    <h2 class="text-3xl font-bold mb-6">Hubungi Kami</h2>
+                    <p class="text-blue-100 mb-8">Silakan hubungi kami untuk informasi pendaftaran murid baru atau pertanyaan terkait kegiatan sekolah.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-amber-400 font-bold">📍</span>
+                            <p class="text-sm">Gandrungmangu, Kabupaten Cilacap, Jawa Tengah</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-amber-400 font-bold">✉️</span>
+                            <p class="text-sm">info@smpn3gandrungmangu.sch.id</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-amber-400 font-bold">📞</span>
+                            <p class="text-sm">(0280) 123456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white text-slate-800 p-8 rounded-2xl shadow-xl">
+                    <h4 class="font-bold text-xl text-blue-900 mb-4">Kirim Pesan</h4>
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Pesan Anda telah terkirim!');">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Nama Lengkap</label>
+                            <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Email / No. HP</label>
+                            <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Pesan</label>
+                            <textarea rows="3" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-lg transition">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-6 border-t border-slate-800 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>© 2026 SMP N 3 Gandrungmangu. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
